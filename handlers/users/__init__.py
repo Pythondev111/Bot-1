@@ -9,7 +9,8 @@ from . import postlar
 from . import media
 from . import dars2
 from . import admin_kommands
-from . import delete
+
+
 
 
 from . import echo

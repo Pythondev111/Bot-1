@@ -29,18 +29,18 @@ class Database:
         connection.close()
         return data
 
-    def create_table_users(self):
-        sql = """
-        CREATE TABLE Users (
-            id int NOT NULL,
-            Name varchar(255) NOT NULL,
-           
-            email varchar(255),
-            language varchar(30),
-            PRIMARY KEY (id)
-            );
-"""
-        self.execute(sql, commit=True)
+#     def create_table_users(self):
+#         sql = """
+#         CREATE TABLE Users (
+#             id int NOT NULL,
+#             Name varchar(255) NOT NULL,
+#
+#             email varchar(255),
+#             language varchar(30),
+#             PRIMARY KEY (id)
+#             );
+# """
+#         self.execute(sql, commit=True)
 
     @staticmethod
     def format_args(sql, parameters: dict):
